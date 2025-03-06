@@ -1,0 +1,8 @@
+<p>parent works!</p>
+<div>
+    <h1>Parent Component</h1>
+    <p>Parent Message: {{ parentMessage }}</p>
+
+    <!-- Passing data to the child component -->
+    <app-child [childMessage]="parentMessage"></app-child>
+</div>

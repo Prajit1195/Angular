@@ -1,0 +1,10 @@
+.active-class {
+    color: green;
+    font-weight: bold;
+  }
+  
+  .inactive-class {
+    color: red;
+    font-weight: normal;
+  }
+  

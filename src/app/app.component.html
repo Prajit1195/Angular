@@ -1,0 +1,40 @@
+
+<<div>
+  <h1>ngIf Example</h1>
+  <button (click)="toggleContent()">Toggle Content</button>
+  <div *ngIf="showContent">
+    <p>This content is conditionally displayed using ngIf!</p>
+  </div>
+</div>
+
+<div>
+  <h1>ngFor Example</h1>
+  <ul>
+    <li *ngFor="let item of items">{{ item }}</li>
+  </ul>
+</div>
+
+<div>
+  <h1>ngClass Example</h1>
+  <div [ngClass]="{ 'highlight': isHighlighted }">
+    This div's class changes dynamically.
+  </div>
+</div>
+
+<div>
+  <h1>Custom Directive Example</h1>
+  <p appHoverHighlight>Hover over this text to change its background color.</p>
+</div>
+
+<div>
+  <h1>Custom Auto Focus Directive</h1>
+  <input type="text" appAutoFocus placeholder="This input will be auto-focused">
+</div>
+
+<div>
+  <h1>Built-in Pipes</h1>
+
+  <h2>Date Pipe</h2>
+  <p>Current Date: {{ currentDate | date: 'fullDate' }}</p>
+  <p>Short Date: {{ currentDate | date: 'shortDate' }}</p>
+</div>
